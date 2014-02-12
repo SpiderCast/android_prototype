@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/loSatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btnMore" >
+
+        <TextView
+            android:id="@+id/tvSatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Eutelsat 172A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSatName"
+            android:layout_alignBottom="@+id/tvSatName"
+            android:layout_alignParentRight="true"
+            android:text="172.0 E"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!-- RelativeLayout
+        android:id="@+id/loSatInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loSatName"
+        android:layout_alignRight="@+id/loSatName"
+        android:layout_below="@+id/loSatName"
+        android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:id="@+id/tvLNBF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tvTP"
+            android:text="LNB Freq. : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLNBFValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvLNBF"
+            android:text="-"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvLNBF"
+            android:text="Transponder : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTPValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTP"
+            android:layout_alignBottom="@+id/tvTP"
+            android:layout_toRightOf="@+id/tvTP"
+            android:text="-"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDiSEqC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignRight="@+id/tvTP"
+            android:layout_below="@+id/tvTP"
+            android:text="DiSEqC : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDiSEqCValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvDiSEqC"
+            android:layout_alignBottom="@+id/tvDiSEqC"
+            android:layout_toRightOf="@+id/tvDiSEqC"
+            android:text="-"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv22K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv22KValue"
+            android:layout_toLeftOf="@+id/tv22KValue"
+            android:text="22KHz : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv22KValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTP"
+            android:layout_alignBottom="@+id/tvTP"
+            android:layout_alignParentRight="true"
+            android:text="-"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLNBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvLNVPValue"
+            android:layout_alignRight="@+id/tv22K"
+            android:text="LNBP : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLNBPValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvLNBF"
+            android:layout_alignBottom="@+id/tvLNBF"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tvLNBP"
+            android:text="-"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvPortValue"
+            android:layout_alignRight="@+id/tv22K"
+            android:text="Port : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPortValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvDiSEqC"
+            android:layout_toRightOf="@+id/tvPort"
+            android:text="-"
+            android:textSize="14sp" />
+
+    </RelativeLayout -->
+
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/more" />
+
+</RelativeLayout>

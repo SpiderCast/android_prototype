@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/loTpInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/tvFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etFreq"
+            android:layout_alignRight="@+id/tvSymb"
+            android:text="Freq. : "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/etSymb"
+            android:layout_toRightOf="@+id/tvFreq"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvFreqUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etFreq"
+            android:layout_alignLeft="@+id/tvSymbUnit"
+            android:text="KHz"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSymb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etSymb"
+            android:layout_alignParentLeft="true"
+            android:text="Symb. : "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etSymb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etFreq"
+            android:layout_toLeftOf="@+id/tvSymbUnit"
+            android:layout_toRightOf="@+id/tvSymb" />
+
+        <TextView
+            android:id="@+id/tvSymbUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etSymb"
+            android:layout_alignParentRight="true"
+            android:text="Kbps"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rbGroup"
+            android:layout_alignRight="@+id/tvSymb"
+            android:layout_toLeftOf="@+id/rbGroup"
+            android:text="Pol. : "
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rbGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etSymb"
+            android:layout_below="@+id/etSymb"
+            android:checkedButton="@+id/Red"
+            android:orientation="horizontal" >
+
+	        <RadioButton
+	            android:id="@+id/rbPolVer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/etSymb"
+	            android:layout_below="@+id/etSymb"
+	            android:text="Ver."
+	            android:textSize="18sp" />
+	
+	        <RadioButton
+	            android:id="@+id/rbPolHor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignRight="@+id/etSymb"
+	            android:layout_below="@+id/etSymb"
+	            android:text="Hor."
+	            android:textSize="18sp" />
+		</RadioGroup>
+		
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loLockInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loTpInfo"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/tvPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/pbPower"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pbQuality"
+            android:layout_alignBottom="@+id/tvPower"
+            android:layout_alignLeft="@+id/pbQuality"
+            android:layout_alignTop="@+id/tvPower"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvPowerValue"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="4dip"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tvPowerValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvPower"
+            android:text="(0%)"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/tvPower"
+            android:text="Quality "
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/pbQuality"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvQuality"
+            android:layout_alignTop="@+id/tvQuality"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvQualityValue"
+            android:layout_toRightOf="@+id/tvQuality"
+            android:minHeight="8dip"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvQualityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvQuality"
+            android:text="(0%)"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

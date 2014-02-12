@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivLock"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/lock" />
+
+    <RelativeLayout
+        android:id="@+id/loTpInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnMore"
+        android:layout_toRightOf="@+id/ivLock" >
+
+        <TextView
+            android:id="@+id/tvFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="3786MHz / H / 27500K"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loLockInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loTpInfo"
+        android:layout_alignRight="@+id/loTpInfo"
+        android:layout_below="@+id/loTpInfo"
+        android:layout_marginLeft="30dp" >
+
+        <TextView
+            android:id="@+id/tvPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/pbPower"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pbQuality"
+            android:layout_alignBottom="@+id/tvPower"
+            android:layout_alignLeft="@+id/pbQuality"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvPower"
+            android:minHeight="4dip"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/tvPower"
+            android:text="Quality "
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/pbQuality"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvQuality"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvQuality"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvQuality"
+            android:minHeight="8dip"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/more" />
+
+</RelativeLayout>

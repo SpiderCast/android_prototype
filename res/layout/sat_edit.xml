@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/loSatInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/ivMore"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvSatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Eutelsat 172A"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSatName"
+            android:layout_alignBottom="@+id/tvSatName"
+            android:layout_alignParentRight="true"
+            android:text="172.0 E"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/bar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:max="100"
+        android:progress="100" />
+
+    <RelativeLayout
+        android:id="@+id/LnbF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/list_item_activated"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvLnbFTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/loLnbF"
+            android:gravity="right"
+            android:text="LNB Freq. : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loLnbF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivLnbF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvLnbF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="150dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barLnbF"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivLnbF"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loLnbF"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_triangle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LnbP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvLnbP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/loLnbP"
+            android:text="LNB Power : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loLnbP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivLnbP"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvLnbP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="150dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barLnbP"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivLnbP"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loLnbP"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_triangle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/loTp"
+            android:gravity="right"
+            android:text="Tranponder : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivTp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="150dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barTp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loTp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_triangle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/_22KHz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv22KHz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/lo22KHz"
+            android:text="22KHz : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/lo22KHz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv22KHz"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv22KHz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="150dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/bar22KHz"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv22KHz"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/lo22KHz"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_triangle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/DiSEqC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvDiSEqC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/loDiSEqC"
+            android:text="DiSEqC : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loDiSEqC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivDiSEqC"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvDiSEqC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="150dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barDiSEqC"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDiSEqC"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loDiSEqC"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_triangle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/loPort"
+            android:text="Port : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivPort"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="150dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barPort"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivPort"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loPort"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_triangle" />
+
+    </RelativeLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loSatInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvSatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Eutelsat 172A"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSatName"
+            android:layout_alignBottom="@+id/tvSatName"
+            android:layout_alignParentRight="true"
+            android:text="172.0 E"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/bar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:max="100"
+        android:progress="100" />
+    
+    <RelativeLayout
+        android:id="@+id/Tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/loTp"
+            android:gravity="right"
+            android:text="Tranponder : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivTp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="150dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barTp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loTp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_triangle" />
+
+    </RelativeLayout>
+    
+    <ProgressBar
+        android:id="@+id/bar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:max="100"
+        android:progress="100" />
+      
+    <RelativeLayout
+        android:id="@+id/Tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/loTp"
+            android:gravity="right"
+            android:text="Longitude : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivTp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="60dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barTp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loTp"
+            android:layout_toLeftOf="@+id/btnGoto"
+            android:src="@drawable/edit_triangle" />
+
+    <TextView
+        android:id="@+id/tvLati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvLong"
+        android:layout_toLeftOf="@+id/loTp"
+        android:gravity="right"
+        android:text="Longitude : "
+        android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/loTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivTp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:minWidth="60dp"
+                android:text="                              "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/barTp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:max="100"
+                android:progress="0" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/loTp"
+            android:layout_toLeftOf="@+id/btnGoto"
+            android:src="@drawable/edit_triangle" />
+                
+        <Button
+            android:id="@+id/btnGoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Go to…" />
+
+    </RelativeLayout>
+    
+    <ProgressBar
+        android:id="@+id/bar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:max="100"
+        android:progress="100" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnWest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/btnEast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="E" />
+
+        <EditText
+            android:id="@+id/etStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnEast"
+            android:layout_toRightOf="@+id/btnWest"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSetStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etStep"
+            android:layout_centerHorizontal="true"
+            android:text="Set Step..." />
+
+        <Button
+            android:id="@+id/btnGoto0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnSetStep"
+            android:text="Go to 0" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnSetStep"
+            android:text="Stop" />
+    </RelativeLayout>
+    
+	<ProgressBar
+	        android:id="@+id/bar1"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_alignParentTop="true"
+	        android:max="100"
+	        android:progress="100" />
+	    
+	<RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/LinearLayout01"
+                android:gravity="right"
+                android:text="Pos No. :"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ImageView01"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_horizontal"
+                    android:minWidth="60dp"
+                    android:text="                              "
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:id="@+id/ProgressBar01"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:max="100"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignBottom="@+id/LinearLayout01"
+                android:layout_toLeftOf="@+id/btnSave"
+                android:src="@drawable/edit_triangle" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Save" />
+
+        </RelativeLayout>
+    
+	<ProgressBar
+	        android:id="@+id/bar1"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_alignParentTop="true"
+	        android:max="100"
+	        android:progress="100" />
+	    
+	
+</LinearLayout>

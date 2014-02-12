@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="list_item_pressed">#FFEEEEEE</color>
+	<color name="list_item_selected">#FFEEEEEE</color>
+	<color name="list_item_activated">#FFEEEEEE</color>
+	
+	<color name="transparent">#00000000</color>
+</resources>

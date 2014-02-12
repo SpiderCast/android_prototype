@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".SatFinter" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="22dp"
+            android:onClick="mOnClick"
+            android:text="SatFinder" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="114dp"
+            android:src="@drawable/whereis" />
+
+        <Button
+            android:id="@+id/btnCntSvr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="22dp"
+            android:onClick="mOnClick"
+            android:text="Connect" />
+
+        <TextView
+            android:id="@+id/tvDebug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:text="ABCD"
+            android:textColor="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/btnChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnStart"
+            android:layout_alignLeft="@+id/btnStart"
+            android:layout_alignRight="@+id/btnStart"
+            android:onClick="mOnClick"
+            android:text="Channel" />
+
+        <TextView
+            android:id="@+id/tvLastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnChannel"
+            android:layout_alignLeft="@+id/btnCntSvr"
+            android:layout_alignRight="@+id/btnChannel"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvLastUpdate"
+            android:layout_alignLeft="@+id/btnChannel"
+            android:layout_alignRight="@+id/tvLastUpdate"
+            android:onClick="mOnClick"
+            android:text="Sat. Reload" />
+
+    </RelativeLayout>
+
+</LinearLayout>
